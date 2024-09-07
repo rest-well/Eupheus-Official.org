@@ -1,0 +1,83 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	image-resolution: 100%;
+}
+
+header {
+	background-color: #f0f0f0;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.topic-container {
+	position: relative;
+	height: 150px; /* set a fixed height for the container */
+	overflow: hidden; /* add this to prevent the image from overflowing */
+  }
+  
+  .topic-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; /* make the image cover the entire container */
+	object-fit: cover; /* make the image cover the entire container */
+	z-index: 0; /* add z-index to make image appear behind text */
+  }
+  
+  .topic-container h1 {
+	position: relative; /* add this to position the text on top of the image */
+	margin-top: 30px; /* add margin to create space between text and top edge */
+	color: #fff;
+	z-index: 1; /* add z-index to make text appear on top of image */
+	padding: 20px; /* add padding to create space between text and image */
+  }
+
+.body-container {
+	background-image: url('2.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 100px; /* increase padding to move boxes down */
+	border: solid;
+}
+
+.box-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+	color: #337ab7;
+	width: 310px;
+	height: auto;
+}
+
+.box:hover {
+	background-color: #f7f7f7;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-image {
+	width: 300px;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+.box-description {
+	font-size: 16px;
+	color: #666;
+}
